@@ -1,0 +1,68 @@
+<html>
+	<head>
+		<link  rel="stylesheet" href="style.css" />
+		<script src="scripts.js" ></script>
+	</head>
+	<body>
+		<div class="main_body">
+			<div class="settings">
+				<div class="amount">
+					<div>Range from: </div>
+					<input type="number" id="from"/>
+					<div> to: </div>
+					<input type="number" id="to" />
+					<button onclick="buildWheels()">Create wheels</button>
+				</div>
+				<div class="spread">
+					<div>Spread: </div>
+					<input type="radio" name="spread" id="easy" value="1"/>
+					<label for="easy">Easy</label>
+					<input type="radio" name="spread" id="regular" value="2" checked />
+					<label for="regular">Regular</label>
+					<input type="radio" name="spread" id="hard" value="3"/>
+					<label for="hard">Hard</label>
+					<input type="radio" name="spread" id="evil" value="4"/>
+					<label for="evil">Evil</label>
+				</div>
+			</div>
+			<div class="slotmachine">
+				<div class="slot_border">
+					<div class="slot_top">
+						<img src="imgs/comment-solid.svg" class="slot_icon comment" />
+					</div>
+					<div id="slot1" class="slot">
+					</div>
+					<div class="slot_bottom">
+					</div>
+				</div>
+				<div class="slot_border">
+					<div class="slot_top">
+						<img src="imgs/retweet-solid.svg" class="slot_icon tweet" />
+					</div>
+					<div id="slot2" class="slot">
+					</div>
+					<div class="slot_bottom">
+					</div>
+				</div>
+				<div class="slot_border">
+					<div class="slot_top">
+						<img src="imgs/heart-solid.svg" class="slot_icon heart" />
+					</div>
+					<div id="slot3" class="slot">
+					</div>
+					<div class="slot_bottom">
+					</div>
+				</div>
+			</div>
+				
+			<button onclick="start()">Spin the wheels</button>
+		
+			<div id="spread_table">
+				<div id="spread_table_title">Possibilities of each value</div>
+				<div id="spread_table_values">
+					
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family: arial;
+}
+
+.main_body
+{
+	width: 100%;
+	max-width: 32rem;
+}
+
+.settings{
+	display: flex;
+	flex-direction: column;
+	max-width: 100%;
+	border: 1px solid blue;
+	background: #AAAAFF;
+	padding: .25rem;
+	gap: .25rem;
+}
+
+.amount{
+	display: flex;
+	gap: .25rem;
+}
+
+.amount input{
+	flex: 1;
+	min-width: 0;
+}
+
+.spread{
+	display: flex;
+	gap: .25rem;
+}
+
+
+.settings *{
+	white-space: nowrap;
+}
+
+.slot_border {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+
+.slot_top {
+  border: 1px solid gold;
+  height: 3rem;
+  background: gold;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.slot_bottom {
+  border: 1px solid gold;
+  height: 1rem;
+  background: gold;
+  border-bottom-left-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+}
+.slotmachine{
+	display: flex;
+	height: 10rem;
+	width: 100%;
+}
+
+.slot {
+  max-width: 100%;
+  overflow: hidden;
+  height: 4rem;
+  background: linear-gradient(0deg, #ffd70078 0%, white 30%, white);
+  border-right: 1px solid gold;
+  border-left: 1px solid gold;
+}
+
+.slot_icon {
+  height: 100%;
+}
+
+.heart {
+	filter: invert(21%) sepia(52%) saturate(6809%) hue-rotate(321deg) brightness(100%) contrast(96%);
+}
+
+.tweet {
+	filter: invert(46%) sepia(95%) saturate(618%) hue-rotate(117deg) brightness(94%) contrast(101%);
+}
+
+.comment {
+	filter: invert(44%) sepia(82%) saturate(1281%) hue-rotate(182deg) brightness(99%) contrast(98%);
+}
+
+.entry {
+  position: relative;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: top 4s;
+  top: 0;
+  font-size: 2rem;
+}
+
+@keyframes scroll {
+  from {top: 0;}
+  to {top: -4rem;}
+}
